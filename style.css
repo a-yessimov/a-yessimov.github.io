@@ -1,0 +1,110 @@
+.container {
+    margin: 0 80px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 20px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__btn {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: inherit;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-docx {
+    background-color: #2e74b5;
+    border: 2px solid #2e74b5;
+    color: #fff;
+}
+
+.btn-pdf {
+    background-color: #ce0b0b;
+    border: 2px solid #ce0b0b;
+    color: #fff;
+}
+
+.btn-docx:hover {
+    color: #2e74b5;
+    background: #fff
+}
+
+.btn-pdf:hover {
+    color: #ce0b0b;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #2e74b5;
+}
+
+p {
+    text-align: justify;
+}
+
+table tr td:first-child {
+    font-weight: bold;
+}
+
+
+.section__title {
+    font-size: 28px;
+    color: rgb(46, 116, 181);
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.project-description {
+    padding: 0 20px;
+    flex: 0 0 50%;
+}
+
+.img-wrapper {
+    flex: 0 0 50%;
+}
+img {
+    width: 100%;
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin: 0;
+    }
+    .project {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header__btn-b {
+        margin-top: 15px;
+    }
+}
