@@ -67,10 +67,25 @@ table tr td:first-child {
     font-weight: bold;
 }
 
+.section-info {
+    display: flex;
+}
+
+.section-info table {
+    margin-left: 20px;
+}
 
 .section__title {
     font-size: 28px;
     color: rgb(46, 116, 181);
+}
+
+.logo-wrapper {
+    max-width: 300px;
+    width: 100%;
+}
+.logo {
+    width: 100%;
 }
 
 .project {
@@ -96,6 +111,19 @@ img {
     }
     .project {
         flex-direction: column;
+    }
+    .section-info {
+        /* flex-wrap: wrap; */
+    }
+}
+
+@media(max-width: 665px) {
+    .section-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-info table {
+        margin: 20px 0 0 0;
     }
 }
 
